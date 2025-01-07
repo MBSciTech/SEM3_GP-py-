@@ -47,7 +47,7 @@ class FormulaValidator:
                 else:
                     raise eoi.IncorrectBondsError("Incorrect bond count Error : "+ str(totalBonds))
                 # Simplistic check: total bonds should be even (basic rule for stability)
-                return totalBonds % 2 == 0
+            return totalBonds % 2 == 0
         except eoi.InvalidElementError as e:
             print(e)
             return False
